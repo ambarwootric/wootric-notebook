@@ -1,6 +1,12 @@
 WootricNotebook::Application.routes.draw do
   devise_for :users
   get "welcome/index"
+  resources :notes
+
+  authenticated :user do
+    root 'notes#index', as: "authenticated_root"
+  end
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
@@ -14,7 +20,7 @@ WootricNotebook::Application.routes.draw do
   #   get 'products/:id/purchase' => 'catalog#purchase', as: :purchase
 
   # Example resource route (maps HTTP verbs to controller actions automatically):
-    resources :notes
+    
 
   # Example resource route with options:
   #   resources :products do
