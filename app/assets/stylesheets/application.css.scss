@@ -6,3 +6,18 @@
 @import 'global.css.scss';
 @import 'notes.css.scss';
 @import 'welcome.css.scss';
+#notice-wrapper {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    background: rgba(135, 216, 211, 0.85);
+    .alert,
+    .notice {
+        padding: 1.95em 0;
+        text-align: center;
+        margin: 0;
+        font-weight: 700;
+        color: green;
+        letter-spacing: 1px;
+    }
+}
