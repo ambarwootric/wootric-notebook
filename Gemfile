@@ -6,6 +6,15 @@ gem 'rails', '4.0.0'
 # Use postgresql as the database for Active Record
 gem 'pg'
 
+# Haml
+gem 'haml', '~> 5.0', '>= 4.0.5'
+
+# Simple form 
+gem 'simple_form', '~> 3.0.2'
+
+# Devise authentication solution
+gem 'devise', '~> 3.4.1'
+
 # Use SCSS for stylesheets
 gem 'sass-rails'
 
